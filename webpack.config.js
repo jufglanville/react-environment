@@ -48,6 +48,10 @@ module.exports = {
         test: /\.(sa|sc|c)ss$/,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(png|jp(e*)g|svg|gif)$/,
+        type: "asset/resource",
+      },
     ],
   },
   devtool: prod ? false : "source-map",
